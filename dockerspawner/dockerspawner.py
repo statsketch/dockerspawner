@@ -253,7 +253,7 @@ class DockerSpawner(Spawner):
         return '{proto}://{ip}:{rest}'.format(
             proto = proto,
             ip = self.hub_ip_connect,
-            rest = rest
+            rest = 8000
         )
 
     def _env_keep_default(self):
